@@ -5,9 +5,9 @@
 ## Insert line below: Alt + Enter
 
 # II. Create a project-specific virtual environment for the workspace containing a copy of a global interpreter (to avoid package incompatability issues)
-# https://code.visualstudio.com/docs/python/environments
+## https://code.visualstudio.com/docs/python/environments
 
-# 1) Conda env
+## 1) Conda env
 ## Update conda in the default env: $ conda upgrade --all
 ## Create a new env with conda: $ conda create -n [my-env-name] python=[python-version]
 ## Activate the env created: $ conda activate [my-env-name]
@@ -18,7 +18,7 @@
 #### pip freeze > requirements.txt (pip3 on macOS): Create a requirements.txt file, describing the packages installed in the virtual environment.
 #### pip install -r requirements.txt: Restore the packages on other computers.
 
-# 2) Local env 
+## 2) Local env 
 ## For Windows | macOS: py -3 -m venv .venv | python3 -m venv .venv (choose "yes" for the pop-up)
 
 # III. Install packages (in Python "shell" not interpreter)
@@ -30,7 +30,7 @@
 # Conclusion:
 ## Command Palette: Select Interpreter: Pick "conda/lihua"
 
-
+# Test program:
 #%%
 
 msg = "Hello World"
@@ -42,5 +42,3 @@ import numpy as np
 x = np.linspace(0, 20, 100)  # Create a list of evenly-spaced numbers over the range
 plt.plot(x, np.sin(x))       # Plot the sine of each x point
 plt.show()                   # Display the plot
-
-# %%
