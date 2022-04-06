@@ -5,19 +5,30 @@
 ## Insert line below: Alt + Enter
 
 # II. Create a project-specific virtual environment for the workspace containing a copy of a global interpreter (to avoid package incompatability issues)
-## https://code.visualstudio.com/docs/python/environments
-## For Windows | macOS: py -3 -m venv .venv | python3 -m venv .venv (choose "yes" for the pop-up)
-## Conda environment: conda create -n env-01 python=3.10 scipy=0.15.0 astroid babel
+# https://code.visualstudio.com/docs/python/environments
+
+# 1) Conda env
+## Update conda in the default env: $ conda upgrade --all
+## Create a new env with conda: $ conda create -n [my-env-name] python=[python-version]
+## Activate the env created: $ conda activate [my-env-name]
+##                           $ source activate [my-env-name] (if source specified, e.g., /Users/lihuaxiao/opt/anaconda3/bin/activate)
+## Remove an env: $ conda env remove --name [my-env-name]
+## Deactivate env: conda deactivate
+
 #### pip freeze > requirements.txt (pip3 on macOS): Create a requirements.txt file, describing the packages installed in the virtual environment.
 #### pip install -r requirements.txt: Restore the packages on other computers.
 
-# III. Install packages (in Pytho "shell" not interpreter)
-## For Windows | Mac: python -m pip install matplotlib | python3 -m pip install matplotlib
+# 2) Local env 
+## For Windows | macOS: py -3 -m venv .venv | python3 -m venv .venv (choose "yes" for the pop-up)
 
-# IV. Type "deactivate" in the terminal window to deactivate the virtual environment, once finished.
+# III. Install packages (in Python "shell" not interpreter)
+## Install pip in the virtual env: $ conda install pip
+## Install Tensorflow CPI version: $ pip3 install --updrade tensorflow
+## Install Keras: $ pip install Keras
+## Install scikit-learn: $ pip install scikit-learn
 
-# V. Use conda
-## Command Palette: Select Interpreter
+# Conclusion:
+## Command Palette: Select Interpreter: Pick "conda/lihua"
 
 
 #%%
