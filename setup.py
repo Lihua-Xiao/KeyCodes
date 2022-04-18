@@ -28,7 +28,7 @@
 ## Install scikit-learn: $ pip install scikit-learn
 
 # Conclusion:
-## Command Palette: Select Interpreter: Pick "conda/lihua"
+## Command Palette: Select Interpreter: Pick "conda/envs/lihua"
 
 # Test program:
 #%%
